@@ -22,6 +22,7 @@ local_users:
     privilege: 15
     role: network-admin
     sha512_password: "{{ ansible_password | password_hash('sha512', salt='arista') }}"
+    # ssh_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdbMBMD5hHwY9/zY7n3JtM5fMmp0C7zCptQWV6YThMpYnvuVkLl+WZZJ1TJ6a3+HMlrcIKOtmDa2BiOq5RHDQ0Jbxu/TRRNCykd034lFIktwZVV5hSlP6Bza18jzLS25jyngs3rTUA5P98VP/jraGUNqC4n+ZJi+Lk1CjmyfklaLvQNnxRQ/KoFwdkbVFuKkG8WEuhSLbmF4gL2en0BA1XxCdrBZ3WisFq0QP5PJdEdlcjMk3eA1YpbfeZvCN4MKye3rp73aitf2XnbTaGBcAl9H97t8BAD8PSoWSxClovprUKpHNYZjAuUqL9Jne2dCYlLmBzG5wv+TjF1aoPTgIn"
 
 # AAA
 aaa_authorization:
